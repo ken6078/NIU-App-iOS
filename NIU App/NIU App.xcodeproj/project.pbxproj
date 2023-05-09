@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17881C5E5AB69D82265581A7 /* Pods_NIU_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADBFC99E8E65F470A34738B /* Pods_NIU_App.framework */; };
 		EE85B2242A0A0215002D1EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE85B2232A0A0215002D1EA1 /* AppDelegate.swift */; };
 		EE85B2282A0A0215002D1EA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE85B2272A0A0215002D1EA1 /* ViewController.swift */; };
 		EE85B22D2A0A0216002D1EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE85B22C2A0A0216002D1EA1 /* Assets.xcassets */; };
 		EE85B2302A0A0216002D1EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE85B22E2A0A0216002D1EA1 /* LaunchScreen.storyboard */; };
+		EED83CED2A0A915A004BA2F6 /* model-meta.tflite in Resources */ = {isa = PBXBuildFile; fileRef = EED83CEC2A0A915A004BA2F6 /* model-meta.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		128FBB9615F9D85D3AD0D5F5 /* Pods-NIU App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIU App.debug.xcconfig"; path = "Target Support Files/Pods-NIU App/Pods-NIU App.debug.xcconfig"; sourceTree = "<group>"; };
+		AADBFC99E8E65F470A34738B /* Pods_NIU_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIU_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD30EE95A4BC6C0DDB1CEA2E /* Pods-NIU App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIU App.release.xcconfig"; path = "Target Support Files/Pods-NIU App/Pods-NIU App.release.xcconfig"; sourceTree = "<group>"; };
 		EE85B2202A0A0215002D1EA1 /* NIU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE85B2232A0A0215002D1EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE85B2272A0A0215002D1EA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE85B22C2A0A0216002D1EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE85B22F2A0A0216002D1EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE85B2312A0A0216002D1EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED83CEC2A0A915A004BA2F6 /* model-meta.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model-meta.tflite"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17881C5E5AB69D82265581A7 /* Pods_NIU_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0AFECB64EB6B11A2C6867C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				128FBB9615F9D85D3AD0D5F5 /* Pods-NIU App.debug.xcconfig */,
+				BD30EE95A4BC6C0DDB1CEA2E /* Pods-NIU App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0AC8D8DDF76666348C35D16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AADBFC99E8E65F470A34738B /* Pods_NIU_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE85B2172A0A0215002D1EA1 = {
 			isa = PBXGroup;
 			children = (
 				EE85B2222A0A0215002D1EA1 /* NIU App */,
 				EE85B2212A0A0215002D1EA1 /* Products */,
+				CF0AFECB64EB6B11A2C6867C /* Pods */,
+				D0AC8D8DDF76666348C35D16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +78,7 @@
 		EE85B2222A0A0215002D1EA1 /* NIU App */ = {
 			isa = PBXGroup;
 			children = (
+				EED83CE52A0A79D9004BA2F6 /* model */,
 				EE85B2232A0A0215002D1EA1 /* AppDelegate.swift */,
 				EE85B2272A0A0215002D1EA1 /* ViewController.swift */,
 				EE85B22C2A0A0216002D1EA1 /* Assets.xcassets */,
@@ -61,6 +88,14 @@
 			path = "NIU App";
 			sourceTree = "<group>";
 		};
+		EED83CE52A0A79D9004BA2F6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EED83CEC2A0A915A004BA2F6 /* model-meta.tflite */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE85B2342A0A0216002D1EA1 /* Build configuration list for PBXNativeTarget "NIU App" */;
 			buildPhases = (
+				DD811ECE4263DB586BCD248E /* [CP] Check Pods Manifest.lock */,
 				EE85B21C2A0A0215002D1EA1 /* Sources */,
 				EE85B21D2A0A0215002D1EA1 /* Frameworks */,
 				EE85B21E2A0A0215002D1EA1 /* Resources */,
@@ -121,10 +157,36 @@
 			files = (
 				EE85B2302A0A0216002D1EA1 /* LaunchScreen.storyboard in Resources */,
 				EE85B22D2A0A0216002D1EA1 /* Assets.xcassets in Resources */,
+				EED83CED2A0A915A004BA2F6 /* model-meta.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD811ECE4263DB586BCD248E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NIU App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE85B21C2A0A0215002D1EA1 /* Sources */ = {
@@ -186,6 +248,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -203,7 +266,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -266,6 +329,7 @@
 		};
 		EE85B2352A0A0216002D1EA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 128FBB9615F9D85D3AD0D5F5 /* Pods-NIU App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +359,7 @@
 		};
 		EE85B2362A0A0216002D1EA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD30EE95A4BC6C0DDB1CEA2E /* Pods-NIU App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
